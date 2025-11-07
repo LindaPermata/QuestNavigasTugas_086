@@ -99,3 +99,4 @@ fun HalamanAwal(navController: NavController) {
 @Composable
 fun HalamanAwalPreview() {
     com.example.questnavigastugas_086.view.HalamanAwal(navController = rememberNavController())
+}
