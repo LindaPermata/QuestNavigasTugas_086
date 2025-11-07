@@ -6,9 +6,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -76,3 +80,20 @@ fun HalamanAwal(navController: NavController) {
                 fontFamily = FontFamily.Monospace,
                 color = nimColor, // Warna Hitam
                 textAlign = TextAlign.Center
+            )
+        }
+        Button(
+            onClick = {
+                navController.navigate(Routes.LIST_DAFTAR)
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            shape = RoundedCornerShape(25.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = buttonColor) // Menggunakan warna Ungu
+        ){
+            Text(text = "Submit", fontSize = 18.sp, color = Color.White)
+        }
+        Spacer(modifier = Modifier.height(50.dp))
+    }
+}
