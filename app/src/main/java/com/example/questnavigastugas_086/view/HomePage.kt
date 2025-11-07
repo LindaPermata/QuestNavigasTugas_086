@@ -2,14 +2,7 @@ package com.example.questnavigastugas_086.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -26,7 +19,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.questnavigastugas_086.R
+import com.example.questnavigastugas_086.Routes
 
 @Composable
 fun HalamanAwal(navController: NavController) {
@@ -73,7 +69,7 @@ fun HalamanAwal(navController: NavController) {
                 textAlign = TextAlign.Center
             )
 
-
+            // 2. Text untuk NIM (Hitam, Font 18.sp, Lebih kecil)
             Text(
                 text = "20230140086",
                 fontSize = nimFontSize, // Lebih kecil
@@ -103,4 +99,3 @@ fun HalamanAwal(navController: NavController) {
 @Composable
 fun HalamanAwalPreview() {
     com.example.questnavigastugas_086.view.HalamanAwal(navController = rememberNavController())
-}
