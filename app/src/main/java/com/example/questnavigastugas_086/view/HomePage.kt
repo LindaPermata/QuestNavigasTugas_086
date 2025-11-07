@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.questnavigastugas_086.R
@@ -58,3 +59,20 @@ fun HalamanAwal(navController: NavController) {
                 contentDescription = "Logo Aplikasi",
                 modifier = Modifier.size(280.dp)
             )
+            Text(
+                text = "Linda Permata Sari",
+                fontSize = namaFontSize,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Monospace,
+                color = namaColor, // Warna Ungu
+                textAlign = TextAlign.Center
+            )
+
+
+            Text(
+                text = "20230140086",
+                fontSize = nimFontSize, // Lebih kecil
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Monospace,
+                color = nimColor, // Warna Hitam
+                textAlign = TextAlign.Center
