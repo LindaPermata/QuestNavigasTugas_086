@@ -42,7 +42,7 @@ fun HalamanAwal(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceAround
     ){
-        Spacer(modifier = Modifier.height(30.dp))
+        Spacer(modifier = Modifier.height(60.dp))
         Text(
             text = "Selamat Datang",
             fontSize = 42.sp,
